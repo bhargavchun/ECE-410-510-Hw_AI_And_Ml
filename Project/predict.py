@@ -6,7 +6,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 
-# Example dummy dataset (replace with parsed sim data)
 data = {
     "scan_len": [8]*16,
     "pattern_bit": [i & 1 for i in range(16)],
