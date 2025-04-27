@@ -1,6 +1,4 @@
-// Code your testbench here
-// or browse Examples
-// File: scan_chain_tb.sv
+
 module scan_chain_tb;
 
   parameter CHAIN_LEN = 8;
