@@ -1,0 +1,42 @@
+* 4x4 Resistive Crossbar
+* Each R[i][j] connects WL[i] to BL[j]
+
+* Input voltage sources
+V1 WL1 0 DC 1.0
+V2 WL2 0 DC 0.5
+V3 WL3 0 DC 0.0
+V4 WL4 0 DC 1.0
+
+* Output bit lines connected to ground through ammeters
+* We measure current through these resistors (acts as sinks)
+RBL1 BL1 0 1MEG
+RBL2 BL2 0 1MEG
+RBL3 BL3 0 1MEG
+RBL4 BL4 0 1MEG
+
+* Crossbar resistive connections
+* Format: R<WL><BL> <WL> <BL> <resistance>
+
+R11 WL1 BL1 1k
+R12 WL1 BL2 2k
+R13 WL1 BL3 3k
+R14 WL1 BL4 4k
+
+R21 WL2 BL1 1k
+R22 WL2 BL2 2k
+R23 WL2 BL3 3k
+R24 WL2 BL4 4k
+
+R31 WL3 BL1 1k
+R32 WL3 BL2 2k
+R33 WL3 BL3 3k
+R34 WL3 BL4 4k
+
+R41 WL4 BL1 1k
+R42 WL4 BL2 2k
+R43 WL4 BL3 3k
+R44 WL4 BL4 4k
+
+* Analysis
+.OP
+.end
